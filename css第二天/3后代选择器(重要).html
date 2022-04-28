@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后代选择器</title>
+    <style>
+        ol li {
+            color: blue;
+        }
+
+        ul li {
+            color: red;
+        }
+
+        ul li a {
+            color: red;
+        }
+
+        .nav li a {
+            color: darkgray;
+        }
+    </style>
+</head>
+
+<body>
+    <ol>
+        <li>ol的li</li>
+        <li>ol的li</li>
+        <li>ol的li</li>
+        <li>ol的li</li>
+    </ol>
+    <ul>
+        <li>ul的li</li>
+        <li>ul的li</li>
+        <li>ul的li</li>
+        <li>ul的li</li>
+        <li><a href="#">孙子</a></li>
+    </ul>
+    <ul class="nav">
+        <li>ul的li</li>
+        <li>ul的li</li>
+        <li>ul的li</li>
+        <li>ul的li</li>
+        <li><a href="#">孙子</a></li>
+        <li><a href="#">孙子</a></li>
+        <li><a href="#">孙子</a></li>
+        <li><a href="#">孙子</a></li>
+    </ul>
+</body>
+
+</html>
