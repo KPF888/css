@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行高继承</title>
+    <style>
+        body {
+            color: skyblue;
+            font: 12px/1.5 '宋体';
+            /* 行高可以不写不用像素写法,1.5行高则为字体的1.5倍 */
+            /* 这种写法子元素可以根据自己的字体大小调整行高 */
+        }
+
+        div {
+            font-size: 16px;
+        }
+
+        p {
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>爱宝爱宝爱宝</div>
+    <p>爱宝爱宝爱宝</p>
+</body>
+
+</html>

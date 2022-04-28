@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>权重叠加</title>
+    <style>
+        li {
+            color: red;
+        }
+
+        ul li {
+            color: skyblue;
+        }
+
+        /* 权重相加 ul权重0,0,0，1 + li权重0,0,0，1 =0，0，0,2 */
+        .nav li {
+            color: pink;
+        }
+
+        /* .nav li 权重 0,0,1,0+0,0,0,1=0,0,1,1 */
+        /* 权重相加永远不会进位 */
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>
+        <ul class="nav">
+            <li>怎么说</li>
+            <li>这么说</li>
+            <li>就这么说</li>
+        </ul>
+        </p>
+    </div>
+</body>
+
+</html>

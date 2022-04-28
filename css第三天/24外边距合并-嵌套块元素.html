@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .father {
+            width: 300px;
+            height: 249px;
+            background-color: skyblue;
+            margin: 0 auto;
+            /* border-top: 1px solid transparent; */
+            /* padding-top: 1px; */
+            overflow: hidden;
+        }
+
+        /* 塌陷解决方案：1、为父元素定义上边框 2、可以为父元素定义上内边距 3、可以为父元素添加overflow:hidden */
+        .son {
+            width: 100px;
+            height: 49px;
+            background-color: red;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>

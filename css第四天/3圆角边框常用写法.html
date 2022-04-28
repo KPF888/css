@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .yuanxing {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            /* 半径设置为宽度的一半 可以直接写百分之五十*/
+            background-color: skyblue;
+        }
+
+        .juxing {
+            width: 300px;
+            height: 200px;
+            background-color: skyblue;
+            border-radius: 100px;
+            /* 设置为高度的一半 */
+        }
+
+        .radius {
+            width: 300px;
+            height: 200px;
+            background-color: skyblue;
+            /* border-radius: 100px 90px 80px 70px; */
+            border-top-left-radius: 30px;
+            /* 不能颠倒写法 */
+        }
+    </style>
+</head>
+
+<body>
+    1.圆形的做法
+    <div class="yuanxing"></div>
+    2.圆角矩形做法
+    <div class="juxing"></div>
+    3.可以设置不同的圆角
+    <div class="radius"></div>
+</body>
+
+</html>

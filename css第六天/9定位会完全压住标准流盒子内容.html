@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 20px;
+            background-color: red;
+        }
+
+        /* .box2 {
+            position: absolute;
+            height: 200px;
+            background-color: skyblue;
+        } */
+        /* 定位会完全压住标准流盒子内容 */
+        .box3 {
+            float: left;
+            height: 200px;
+            width: 200px;
+            background-color: skyblue;
+        }
+
+        /* 浮动元素不会压住下面标准流的文字，文字会环绕在浮动元素周围 */
+    </style>
+</head>
+
+<body>
+
+    <!-- <p class="box2">蒸的c</p> -->
+    <p class="box3"></p>
+    <div class="box">大鹏一日同风起，扶摇直上九万里</div>
+</body>
+
+</html>

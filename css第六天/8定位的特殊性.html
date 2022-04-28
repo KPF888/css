@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位的特殊性</title>
+    <style>
+        /* 设置定位属性后就可以直接设置宽高 */
+        /* 脱标的盒子不会触发外边距合并（塌陷） */
+        .box {
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <span class="box"></span>
+</body>
+
+</html>
