@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin负值的巧妙利用</title>
+    <style>
+        ul li {
+            position: relative;
+            float: left;
+            width: 150px;
+            height: 300px;
+            list-style: none;
+            border: 1px solid red;
+            margin-left: -1px;
+        }
+
+        /* ul li:hover {
+            1.可以加相对定位让他在其他盒子之上
+            position: relative;
+            border: 1px solid skyblue;
+        } */
+
+        ul li:hover {
+            /* 2.提高定位的层级 */
+            z-index: 1;
+            border: 1px solid skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+
+</html>
