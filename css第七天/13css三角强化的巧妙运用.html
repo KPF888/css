@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三角强化的巧妙运用</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 0;
+            height: 0;
+            font-size: 0;
+            line-height: 0;
+            /* 上边框宽度调大，颜色透明 */
+            /* border-top: 100px solid transparent;
+            border-right: 50px solid pink; */
+            /* 左边框和下边框宽度设置为0 */
+            /* border-bottom: 0 solid skyblue;
+            border-left: 0 solid yellow; */
+            border-style: solid;
+            border-color: transparent skyblue pink yellow;
+            border-width: 100px 50px 0 0;
+        }
+
+        .price {
+            width: 180px;
+            height: 24px;
+            border: 1px solid red;
+            margin: 50px auto;
+            text-align: center;
+            line-height: 24px;
+        }
+
+        .price .now {
+            position: relative;
+            float: left;
+            width: 100px;
+            height: 100%;
+            background-color: red;
+            color: #fff;
+            font-weight: 700;
+        }
+
+        .price .before {
+            background-color: #fff;
+            color: gray;
+            font-size: 14px;
+            text-decoration: line-through;
+        }
+
+        .now i {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 0;
+            height: 0;
+            font-size: 0;
+            line-height: 0;
+            border-color: transparent #fff transparent transparent;
+            border-style: solid;
+            border-width: 24px 10px 0 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="price">
+        <span class="now">
+            ￥1650.00
+            <i></i>
+        </span>
+        <span class="before">￥5088.00</span>
+    </div>
+</body>
+
+</html>
