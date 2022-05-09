@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>新增视频标签</title>
+    <style>
+        .mi {
+            width: 800px;
+            height: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- muted：静音。用来解决谷歌禁用自动播放 -->
+    <!-- controls显示播放控件 -->
+    <!-- loop循环播放 -->
+    <!-- poster预加载图片，网速慢显示图片 -->
+    <video class="mi" src="media/mi.mp4" autoplay="autoplay" muted="muted" controls="controls" loop="loop"
+        poster="media/mi9.jpg"></video>
+    <!-- 兼容性更高的写法： -->
+    <!-- <video src="">
+        <source src="media/mi.mp4" type="video/mp4">
+        <source src="media/mi.ogg" type="video/ogg">
+        <source src="media/mi.webm" type="video/webm">
+    </video> -->
+</body>
+
+</html>

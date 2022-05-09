@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html5新增表单属性</title>
+    <style>
+        input::placeholder {
+            color: skyblue;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- required：必填 -->
+    <!-- placeholder(重要)提示文本，表单的提示信息 -->
+    <!-- autofocus自动获得焦点 -->
+    <!-- autocomplete,记录已经提交过的值 -->
+    <!-- multiple多选上传文件 -->
+    <form action="#">
+        <input type="search" name="sear" id="" required="required" placeholder="爱宝么么哒" autofocus="autofocus"
+            autocomplete="off">
+        <input type="file" name="" id="" multiple="multiple">
+        <input type="submit" value="提交">
+    </form>
+</body>
+
+</html>
