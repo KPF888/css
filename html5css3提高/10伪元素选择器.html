@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素选择器</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+        }
+
+        /* 伪元素选择器权重为1 */
+
+        div::before {
+            /* content属性必须有，否则不起做作用 */
+            /* 为行内元素，无法直接设置宽高 */
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: red;
+            content: '我';
+        }
+
+        div::after {
+            content: '大猪佩奇';
+        }
+    </style>
+</head>
+
+<body>
+    <div>是</div>
+</body>
+
+</html>
