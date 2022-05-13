@@ -13,17 +13,133 @@
             box-sizing: border-box;
         }
 
+        .clearfix:before,
+        .clearfix:after {
+            content: "";
+            display: table;
+        }
+
+        .clearfix:after {
+            clear: both;
+        }
+
+        .clearfix {
+            *zoom: 1;
+        }
+
         .apple {
-            width: 200px;
-            height: 300px;
-            background-color: red;
+            width: 300px;
+            height: 400px;
             margin: 5px auto;
+            border: 1px solid #838786;
+            background-color: #fff;
+        }
+
+        .center {
+            margin-left: calc((100% - 160px)/2);
+        }
+
+        .position {
+            margin-left: 25px;
+        }
+
+        .apple img {
+            margin-top: 5px;
+            width: 160px;
+            height: 260px;
+        }
+
+        .apple .bt,
+        .apple .kinds {
+            margin-left: 25px;
+            margin-top: 5px;
+            color: #838786;
+        }
+
+        .price .now {
+            font-weight: 700;
+            font-size: 18px;
+            color: red;
+        }
+
+        .price .before {
+            text-decoration: line-through;
+            font-weight: 400;
+            font-size: 14px;
+            color: #a3a3a0;
+        }
+
+        .quantity .bar,
+        .quantity p {
+            float: left;
+        }
+
+        .quantity p {
+            font-size: 10px;
+            color: #838786;
+        }
+
+        .quantity .bar {
+            margin: 0 2px;
+            width: 150px;
+            height: 12px;
+            border: 2px solid #ff5443;
+            border-radius: 6px;
+        }
+
+        .quantity .bar_in {
+            width: 0;
+            height: 100%;
+            transition: width 1s ease 0s;
+            border-radius: 6px;
+            background-color: #ff5443;
+        }
+
+        .quantity:hover .bar_in {
+            width: 87%;
+        }
+
+        .quantity p:nth-of-type(2n) {
+            color: red;
+        }
+
+        .pay {
+            float: left;
+            width: 250px;
+            height: 35px;
+            margin-top: 5px;
+            padding-left: 75px;
+            line-height: 35px;
+            font-size: 25px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #bc2815;
         }
     </style>
 </head>
 
 <body>
-    <div class="apple"></div>
+    <div class="apple">
+        <img src="images/图层2.png" alt="" class="center">
+        <p class="bt">Apple苹果iPhone 6s Plus (A1699) 32G</p>
+        <p class="kinds">金色 移动联通电信4G手机</p>
+        <div class="price position">
+            <span class="now">￥6088</span>
+            <span class="before">￥6988</span>
+        </div>
+        <div class="quantity clearfix position">
+            <p>已售</p>
+            <p>87%</p>
+            <div class="bar">
+                <div class="bar_in"></div>
+            </div>
+            <p>剩余</p>
+            <p>29件</p>
+        </div>
+        <a href="#" class="pay position">
+            立即抢购
+        </a>
+    </div>
 </body>
 
 </html>
