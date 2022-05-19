@@ -1,0 +1,146 @@
+/* 版心区域 */
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* 声明字体图标 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?lr3xgk');
+    src: url('../fonts/icomoon.eot?lr3xgk#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?lr3xgk') format('truetype'),
+        url('../fonts/icomoon.woff?lr3xgk') format('woff'),
+        url('../fonts/icomoon.svg?lr3xgk#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.style_red {
+    color: #c81623;
+}
+
+/* 快捷导航区域 */
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.shortcut {
+    height: 31px;
+    line-height: 31px;
+    background-color: #f1f1f1;
+}
+
+/* 左侧 */
+.shortcut ul li {
+    float: left;
+}
+
+.shortcut .w .fl ul li a:nth-of-type(2n) {
+    margin-left: 15px;
+}
+
+.shortcut .w .fl ul li {
+    font-size: 12px;
+}
+
+/* 右侧 */
+.shortcut .w .fr ul li:nth-of-type(2n) {
+    padding: 0px 15px;
+}
+
+
+.shortcut .w .fr ul li[class=e]::after {
+    margin-left: 6px;
+    vertical-align: middle;
+    color: #6e6e6e;
+    font-size: 18px;
+    font-family: 'icomoon';
+    content: '\e922';
+}
+
+/* 头部区域 */
+.header {
+    position: relative;
+    height: 105px;
+}
+
+.header .logo {
+    position: absolute;
+    top: 25px;
+    width: 171px;
+    height: 61px;
+}
+
+.header .logo a {
+    display: block;
+    width: 171px;
+    height: 61px;
+    background: url(../images/logo.png) no-repeat;
+    font-size: 0;
+}
+
+.header .center {
+    position: absolute;
+    top: 25px;
+    left: 350px;
+    width: 535px;
+    height: 55px;
+}
+
+.header .center .search {
+    width: 453px;
+    height: 32px;
+    border: 2px solid #b1191a;
+    border-right: none;
+}
+
+.header .center button {
+    width: 82px;
+    height: 32px;
+    background-color: #b1191a;
+    font-size: 16px;
+    line-height: 32px;
+    color: #fff;
+}
+
+.header .center .hotwords ul li {
+    float: left;
+    padding: 0 12px;
+    font-size: 12px;
+}
+
+.shopcar {
+    position: absolute;
+    top: 25px;
+    right: 64px;
+    width: 139px;
+    height: 35px;
+    border: 1px solid #dfdfdf;
+    background-color: #f7f7f7;
+    text-align: center;
+    line-height: 35px;
+}
+
+.header .shopcar::before {
+    margin-right: 5px;
+    vertical-align: middle;
+    font-family: 'icomoon';
+    content: '\e93a';
+    color: #d94f4f;
+    font-size: 12px;
+}
+
+.header .shopcar::after {
+    margin-left: 15px;
+    vertical-align: middle;
+    font-family: 'icomoon';
+    content: '\e920';
+    font-size: 12px;
+}
