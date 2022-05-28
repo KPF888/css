@@ -1,0 +1,151 @@
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    height: 84px;
+    border-bottom: 2px solid #c91623;
+}
+
+.logo {
+    padding-top: 17px;
+}
+
+.registerarea {
+    height: 465px;
+    border: 1px solid #ccc;
+    margin-top: 20px;
+}
+
+.registerarea h3 {
+    height: 42px;
+    padding: 0 10px;
+    line-height: 42px;
+    font-size: 18px;
+    font-weight: 400;
+    border-bottom: 1px solid #ccc;
+    background-color: #ececec;
+}
+
+.login {
+    float: right;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.login a {
+    color: #ca111a;
+}
+
+.reg_form {
+    width: 600px;
+    margin: 50px auto 0;
+}
+
+.reg_form ul li .inp {
+    width: 242px;
+    height: 37px;
+    border: 1px solid #ccc;
+}
+
+.reg_form ul li {
+    margin-bottom: 20px;
+}
+
+.reg_form ul li label {
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+    font-size: 14px;
+
+}
+
+.reg_form ul li .error {
+    color: #e12d2c;
+}
+
+.error i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/error.png) no-repeat;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+.bingo i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/bingo.png) no-repeat;
+    vertical-align: middle;
+    margin-top: -3px;
+}
+
+.reg_form ul li i {
+    margin-left: 2px;
+}
+
+.safe {
+    padding-left: 168px;
+}
+
+.safe em {
+    padding: 0 12px;
+    color: #fff;
+}
+
+.safe .ruo {
+    background-color: #e10800;
+}
+
+.safe .zhong {
+    background-color: #39ba36;
+}
+
+.safe .qiang {
+    background-color: #f99200;
+}
+
+.agree {
+    padding-left: 86px;
+}
+
+.agree a {
+    color: #01a0e9;
+}
+
+.finish {
+    padding-left: 98px;
+}
+
+.finish input {
+    width: 200px;
+    height: 35px;
+    font-size: 14px;
+    color: #fff;
+    background-color: #ca111a;
+}
+
+/* 底部区域 */
+
+footer .copyright {
+    height: 120px;
+    text-align: center;
+    padding-top: 20px;
+    line-height: 30px;
+}
+
+footer .copyright ul li,
+footer .copyright ul span {
+    float: left;
+}
+
+footer .copyright ul li {
+    margin: 0 15px;
+}
+
+footer .copyright ul li:first-child {
+    margin-left: 117px;
+}

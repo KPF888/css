@@ -1,0 +1,238 @@
+/* 声明字体图标 */
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?lr3xgk');
+    src: url('../fonts/icomoon.eot?lr3xgk#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?lr3xgk') format('truetype'),
+        url('../fonts/icomoon.woff?lr3xgk') format('woff'),
+        url('../fonts/icomoon.svg?lr3xgk#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.sk {
+    position: absolute;
+    left: 185px;
+    top: 40px;
+    padding-left: 14px;
+    border-left: 2px solid #c81523;
+}
+
+/* 导航栏区域 */
+.nav {
+    height: 45px;
+    line-height: 45px;
+}
+
+.nav .left a {
+    padding: 0 29px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000;
+}
+
+.nav .left a:hover {
+    color: #b1191a;
+
+}
+
+.nav .right ul li {
+    float: left;
+    padding: 0 22px;
+}
+
+.nav .right ul li a {
+    font-size: 14px;
+    color: #666;
+}
+
+.nav .right ul li a:hover {
+    color: #b1191a;
+}
+
+.nav .right ul li:last-child {
+    margin-right: 60px;
+}
+
+.nav .right ul li:last-child::after {
+    content: '\e922';
+    font-family: 'icomoon';
+}
+
+.nav .right ul li:first-child {
+    padding-left: 0;
+}
+
+
+
+/* 大图区域 */
+
+.bigimg {
+    height: 120px;
+    margin-top: 1px;
+}
+
+/* 主体区域 */
+.main {
+    margin-top: 1px;
+}
+
+.main ul {
+    float: left;
+    margin-right: 13px;
+}
+
+.main ul:nth-child(4n) {
+    margin-right: 0;
+}
+
+
+.main ul li {
+    overflow: hidden;
+    width: 290px;
+    height: 460px;
+    border: 2px solid transparent;
+}
+
+.main ul li:hover {
+    border: 2px solid #b1191a;
+}
+
+.main ul li img {
+    width: 288px;
+    height: 290px;
+}
+
+.main ul li h4 {
+    margin-top: 10px;
+    line-height: 20px;
+    padding: 0 15px;
+}
+
+.main ul li h1,
+.main ul li h5 {
+    display: inline-block;
+}
+
+.main ul li h1 {
+    margin-top: 7px;
+    font-size: 22px;
+    color: #e60012;
+    padding-left: 15px;
+    padding-right: 8px;
+}
+
+.main ul li h5 {
+    font-size: 14px;
+    color: #a4a4a4;
+    text-decoration: line-through;
+}
+
+.main .bar {
+    height: 20px;
+}
+
+.main .bar div,
+.main .bar div span,
+.main .bar h2 {
+    float: left;
+}
+
+.main .bar h2 {
+    font-size: 14px;
+    color: #666;
+}
+
+.main .bar h2:first-child {
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+.main .bar h2:last-child {
+    padding-left: 5px;
+}
+
+.main .bar div {
+    margin-top: 3px;
+    width: 133px;
+    height: 12px;
+    border-radius: 6px;
+    border: 1px solid #ed282e;
+}
+
+.main .bar div span {
+    width: calc(133px * .87);
+    height: 100%;
+    border-radius: 6px;
+    background-color: #ed282e;
+}
+
+.pay {
+    width: 100%;
+    height: 50px;
+    margin-top: 8px;
+    line-height: 50px;
+    background-color: #b1191a;
+}
+
+.pay a {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+}
+
+/* 固定定位返回顶部区域 */
+
+._back {
+    position: fixed;
+    width: 70px;
+    height: 140px;
+    left: 50%;
+    margin-left: 600px;
+    background-color: #fff;
+}
+
+._back div {
+    height: 69px;
+    width: 100%;
+    background-color: #b1191a;
+}
+
+._back .hd {
+    margin-bottom: 2px;
+}
+
+._back .hd i {
+    position: absolute;
+    left: 26px;
+    top: 10px;
+    content: '\e921';
+    font-family: 'icomoon';
+    font-size: 20px;
+    color: #fff;
+}
+
+._back .hd h3 {
+    position: absolute;
+    left: 20px;
+    top: 25px;
+    font-size: 20px;
+    color: #fff;
+}
+
+._back .bd {
+    text-align: center;
+}
+
+._back .bd i {
+    display: inline-block;
+    content: '';
+    font-family: 'icomoon';
+    font-size: 40px;
+    margin-top: 5px;
+    color: #fff;
+}

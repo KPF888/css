@@ -144,3 +144,173 @@
     content: '\e920';
     font-size: 12px;
 }
+
+.header .shopcar .count {
+    position: absolute;
+    left: 104px;
+    top: -4px;
+    width: 16px;
+    height: 14px;
+    line-height: 14px;
+    border-radius: 7px 7px 7px 0;
+    color: #fefefe;
+    background-color: #e60012;
+}
+
+/* 导航栏区域 */
+
+.nav .up {
+    position: sticky;
+    z-index: 1;
+    height: 45px;
+    line-height: 45px;
+    top: 0;
+    background-color: #fff;
+}
+
+.nav .down {
+    height: 465px;
+}
+
+.nav .up .left {
+    float: left;
+    width: 210px;
+    text-align: center;
+    font-size: 16px;
+    background-color: #b1191a;
+}
+
+.nav .up .left a {
+    color: #fff;
+}
+
+.nav .up .right {
+    float: right;
+}
+
+.nav .up .right li {
+    float: left;
+    padding: 0 40px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* 分割线 */
+.line {
+    position: sticky;
+    top: 45px;
+    z-index: 1;
+    border: 2px solid #b1191a;
+}
+
+/* 底部区域 */
+.footer {
+    height: 420px;
+    background-color: #f5f5f5;
+}
+
+.footer .mod_service {
+    height: 110px;
+}
+
+.footer .mod_help {
+    height: 190px;
+    padding-left: 52px;
+    padding-top: 22px;
+}
+
+
+
+.footer .mod_service,
+.footer .mod_help {
+    border-bottom: 1px solid #ededed;
+}
+
+.footer .mod_service ul li {
+    float: left;
+    width: calc(1200px * .2);
+    height: 109px;
+    padding-left: 37px;
+    padding-top: 30px;
+}
+
+.footer .mod_service ul li h5 {
+    float: left;
+    height: 50px;
+    width: 50px;
+    background: url(../images/icons.png) no-repeat -253px -3px;
+}
+
+.footer .mod_service ul li h4 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.footer .mod_service ul li p {
+    line-height: 24px;
+}
+
+.footer .mod_service ul li:nth-child(2) h5 {
+    background: url(../images/icons.png) no-repeat -255px -54px;
+}
+
+.footer .mod_service ul li:nth-child(3) h5 {
+    background: url(../images/icons.png) no-repeat -257px -106px;
+}
+
+.footer .mod_service ul li:nth-child(4) h5 {
+    background: url(../images/icons.png) no-repeat -257px -157px;
+}
+
+.footer .mod_service ul li:nth-child(5) h5 {
+    background: url(../images/icons.png) no-repeat -257px -209px;
+}
+
+
+
+.footer .mod_help dl {
+    float: left;
+    width: 200px;
+}
+
+.footer .mod_help dl:last-child {
+    width: 100px;
+    text-align: center;
+}
+
+.footer .mod_help dl dt {
+    font-size: 16px;
+    line-height: 30px;
+    color: #333;
+}
+
+.footer .mod_help dl dd {
+    line-height: 20px;
+    color: #666;
+}
+
+.footer .mod_help .help_last dd:nth-of-type(1) {
+    width: 90px;
+    height: 90px;
+}
+
+.footer .copyright {
+    height: 120px;
+    text-align: center;
+    padding-top: 20px;
+    line-height: 30px;
+}
+
+.footer .copyright ul li,
+.footer .copyright ul span {
+    float: left;
+}
+
+.footer .copyright ul li {
+    margin: 0 15px;
+}
+
+.footer .copyright ul li:first-child {
+    margin-left: 117px;
+}

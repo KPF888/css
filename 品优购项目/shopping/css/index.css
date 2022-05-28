@@ -1,0 +1,225 @@
+.nav .down .center {
+    position: absolute;
+    top: 10px;
+    left: 220px;
+    width: 721px;
+    height: 455px;
+}
+
+.nav .down .right {
+    position: absolute;
+    width: 250px;
+    height: 455px;
+    right: 0;
+    top: 10px;
+}
+
+.nav .down .right .up1 {
+    height: 164px;
+}
+
+.nav .down .right .up1 .down2 ul li {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.nav .down .right .center1 {
+    height: 209px;
+    background-color: #fff;
+}
+
+.nav .down .right .down1 {
+    width: 250px;
+    height: 75px;
+    margin-top: 6px;
+}
+
+.nav .down .right .up1 .up2 {
+    height: 32px;
+    line-height: 32px;
+}
+
+.nav .down .right .up1 p {
+    float: left;
+    margin-left: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.nav .down .right .up1 a {
+    margin-left: 110px;
+    font-size: 12px;
+    color: #333;
+}
+
+.nav .right .center1,
+.nav .right .up1 {
+    border: 1px solid #e4e4e4;
+}
+
+.nav .right .center1 {
+    margin-top: -1px;
+}
+
+.nav .right .up1 .up2 {
+    border-bottom: 1px dotted #e4e4e4;
+}
+
+.nav .right .up1 .down2 {
+    height: 130px;
+}
+
+.nav .right .up1 .down2 li {
+    padding: 7px 0 0 16px;
+}
+
+/* main部分 */
+.nav .down {
+    position: relative;
+}
+
+.nav .down .left {
+    width: 210px;
+    height: 100%;
+    background-color: red;
+}
+
+.nav .down .left li {
+    height: 31px;
+    line-height: 31px;
+    padding-left: 10px;
+}
+
+.nav .down .left li span {
+    float: right;
+    margin-right: 5px;
+}
+
+.nav .down .left li a {
+    color: #fff;
+    font-size: 14px;
+}
+
+.nav .down .left li:hover,
+.nav .down .left li:hover a {
+    color: #c81623;
+    background-color: #fff;
+}
+
+
+/* 推荐栏模块 */
+.recommend {
+    margin-top: 10px;
+    height: 163px;
+}
+
+.recommend div {
+    float: left;
+    width: 204px;
+    height: 100%;
+}
+
+.recommend ul li {
+    float: left;
+    height: 163px;
+    width: 249px;
+    background-color: red;
+}
+
+.recommend img {
+    width: 100%;
+    height: 100%;
+}
+
+/* 电梯模块 */
+
+.jiadian {
+    height: 397px;
+    margin-top: 22px;
+}
+
+.jiadian .hd {
+    height: 37px;
+    line-height: 37px;
+    border-bottom: 2px solid #c81623;
+}
+
+.jiadian .hd div:first-child {
+    float: left;
+    font-size: 18px;
+    color: #c81623;
+}
+
+.jiadian .hd div:last-child {
+    float: right;
+}
+
+.jiadian .hd div:last-child ul li {
+    float: left;
+}
+
+.jiadian .hd div:last-child ul li a {
+    padding: 0 15px;
+}
+
+.jiadian .bd {
+    height: 360px;
+}
+
+.tab_list_item>div {
+    float: left;
+    height: 360px;
+}
+
+.col210 {
+    width: 210px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.col210 ul li {
+    float: left;
+    width: 86px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    border-bottom: 1px solid #ededed;
+    color: #666666;
+}
+
+.col210 ul li:nth-of-type(2n+1) {
+    margin-left: 14px;
+    margin-right: 6px;
+}
+
+.col210 ul li:nth-of-type(2n) {
+    margin-left: 6px;
+}
+
+.col330 {
+    width: 330px;
+}
+
+.col220 {
+    width: 220px;
+    border-right: 1px solid #ededed;
+}
+
+.col220 img:nth-child(1) {
+    border-bottom: 1px solid #ccc;
+}
+
+.col221 {
+    width: 221px;
+    border-right: 1px solid #ccc;
+}
+
+.col219 {
+    width: 219px;
+    background-color: #fff;
+}
+
+.col219 img:nth-child(1) {
+    border-bottom: 1px solid #ccc;
+}
