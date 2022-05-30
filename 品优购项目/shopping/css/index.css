@@ -223,3 +223,16 @@
 .col219 img:nth-child(1) {
     border-bottom: 1px solid #ccc;
 }
+
+/* 爱宝模块 */
+
+._aibao {
+    position: fixed;
+    left: 92%;
+    top: 40%;
+}
+
+._aibao img {
+    width: 60px;
+    height: 80px;
+}
