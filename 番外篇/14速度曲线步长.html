@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes w {
+            0% {}
+
+            100% {
+                width: 290px;
+            }
+        }
+
+        div {
+            overflow: hidden;
+            width: 0;
+            font-size: 10px;
+            background-color: skyblue;
+            white-space: nowrap;
+
+            /* steps 就是动画分几步完成 有了steps就不要写 ease linear */
+            animation: w 3s steps(24) forwards;
+        }
+    </style>
+</head>
+
+<body>
+    <div>且夫天地之间物各有主，苟非吾之所有，虽一毫而莫取</div>
+</body>
+
+</html>

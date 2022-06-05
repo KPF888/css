@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 100px auto;
+            transform-origin: left bottom;
+            /* 可以设置缩放的中心点 */
+        }
+
+        div:hover {
+            /* transform: scale(x,y) 只能填数字，数字为倍数 */
+            transform: scale(2, 2);
+            /* x和y都放大两倍 */
+
+            transform: scale(2, 0);
+            /* x放大两倍，y不变 */
+
+            transform: scale(2);
+            /* x,y同时放大两倍 */
+
+            transform: scale(0.5);
+            /* x,y同时缩小两倍倍 */
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

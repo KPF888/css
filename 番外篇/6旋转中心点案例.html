@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 2px solid pink;
+            margin: 100px auto 0;
+            overflow: hidden;
+        }
+
+        div::before {
+            content: 'kkkkkkhack';
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-color: honeydew;
+            transform: rotate(90deg);
+            transform-origin: left bottom;
+            /* 设置旋转中心点为左下角 */
+            transition: all 1s ease 0s;
+            /* 设置过渡 */
+        }
+
+        div:hover::before {
+            transform: rotate(0deg);
+            /* 还原状态 */
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

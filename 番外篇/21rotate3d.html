@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            perspective: 300px;
+        }
+
+        img {
+            display: block;
+            margin: 100px auto;
+            transition: all 1s ease 0s;
+        }
+
+        img:hover {
+
+            transform: rotate3d(0, 0, 1, 45deg);
+            /* 沿z轴旋转45度 */
+
+            /* 这个式子的坐标轴做向量运算 */
+            transform: rotate3d(1, 1, 0, 45deg);
+            /* 沿对角线旋转 */
+        }
+    </style>
+</head>
+
+<body>
+    <img src="images/pig.jpg" alt="">
+</body>
+
+</html>

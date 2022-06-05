@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes move {
+            0% {
+                transform: translate(0, 0);
+            }
+
+            100% {
+                transform: translateX(888px) rotate(360deg) scale(1.5);
+            }
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+
+            /* animation-name 动画名称 */
+            /* 重要 */
+            /* animation-name: move; */
+
+            /* duration 动画时间 */
+            /* 重要 */
+            /* animation-duration: 2s; */
+
+            /* timeing-function 动画速度曲线 默认是ease*/
+            /* animation-timing-function: ease; */
+
+            /* delay 规定何时开始 默认零秒开始*/
+            /* animation-delay: 2s; */
+
+            /* iteration-count 规定动画重复几次,默认一次 infinite无限次 */
+            /* 重要 */
+            /* animation-iteration-count: 2; */
+
+            /* direction 规定下一次动画是否倒放，默认normal alternate倒放 */
+            /* animation-direction: alternate; */
+
+            /* fill-mode定义动画结束后停在哪里 backwards 回到原点 forwards停在原地 */
+            /* animation-fill-mode: forwards; */
+
+            animation: move 2s ease 2s infinite alternate forwards;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+        }
+
+        div:hover {
+
+            /* play-state 定义动画 停止或是运动 默认 running运动 paused为停止 */
+            animation-play-state: paused;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

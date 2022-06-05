@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            perspective: 300px;
+        }
+
+        .nav {
+            width: 400px;
+            height: 35px;
+            margin: 100px auto;
+            transform-style: preserve-3d;
+        }
+
+        li {
+            transform-style: preserve-3d;
+            position: relative;
+            line-height: 35px;
+            text-align: center;
+            list-style: none;
+            transition: all .6s ease 0s;
+        }
+
+        li:nth-child(1) {
+            left: 0px;
+        }
+
+        li:nth-child(2) {
+            left: 80px;
+        }
+
+        li:nth-child(3) {
+            left: 160px;
+        }
+
+        li:nth-child(4) {
+            left: 240px;
+        }
+
+        li:nth-child(5) {
+            left: 320px;
+        }
+
+        li:hover {
+            transform: rotateX(90deg);
+        }
+
+
+        .under,
+        .bottom {
+            position: absolute;
+            width: 80px;
+            height: 35px;
+        }
+
+        .under {
+            z-index: 1;
+            background-color: pink;
+        }
+
+        .bottom {
+            background-color: skyblue;
+            transform: rotateX(-90deg) translateY(50%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>
+                <div class="under">煜帝</div>
+                <div class="bottom">煜帝</div>
+            </li>
+            <li>
+                <div class="under">煜帝</div>
+                <div class="bottom">煜帝</div>
+            </li>
+            <li>
+                <div class="under">煜帝</div>
+                <div class="bottom">煜帝</div>
+            </li>
+            <li>
+                <div class="under">煜帝</div>
+                <div class="bottom">煜帝</div>
+            </li>
+            <li>
+                <div class="under">煜帝</div>
+                <div class="bottom">煜帝</div>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
