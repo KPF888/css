@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 500px;
+            height: 500px;
+            border: 2px solid red;
+            background: url(images/dog.jpg) no-repeat;
+            /* background-size: 宽 高; */
+            /* background-size: 100% 100%; */
+            /* 1.只写一个参数 另一个会等比例缩放 */
+            /* background-size: 500px; */
+
+            /* 2.里面的单位可以跟百分比 */
+            /* background-size: 50%; */
+
+            /* 3.cover 等比拉伸 完全盖住盒子 */
+            /* background-size: cover; */
+
+            /* 4.contain 宽高有一个覆盖完全了就不再扩大了，等比例拉伸 */
+            background-size: contain;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>
