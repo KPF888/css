@@ -1,0 +1,198 @@
+@import url(normalize.css);
+@import url(swiper-bundle.min.css);
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 75px !important;
+  }
+}
+a {
+  text-decoration: none;
+}
+body {
+  min-width: 320px;
+  max-width: 750px;
+  margin: 0 auto;
+  background-color: #F2F4F7;
+  height: 2000px;
+}
+.wrap {
+  overflow: hidden;
+  background-color: #fff;
+}
+header {
+  display: block;
+  height: 0.44rem;
+  font-size: 0.4667rem;
+  color: #1C1C1C;
+  text-align: center;
+  padding: 0.5067rem 0 0.3467rem;
+  border-bottom: 1px solid #EAEAEA;
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  width: 10rem;
+  height: 6.96rem;
+}
+nav a {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 33.33%;
+  font-size: 0.3333rem;
+  color: #707070;
+}
+nav a img {
+  width: 1.8533rem;
+  height: 1.8533rem;
+  margin-bottom: 0.2133rem;
+}
+.go {
+  height: 2.0267rem;
+  margin: 0 0.1333rem 0 0.24rem;
+  margin-bottom: 0.5733rem;
+}
+.go img {
+  height: 100%;
+}
+.content {
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+  margin-top: 0.1333rem;
+  padding: 0.5333rem 0.32rem 0.5067rem 0.2933rem;
+}
+.content .con_hd {
+  display: flex;
+  justify-content: space-between;
+  height: 0.5067rem;
+}
+.content .con_hd h4 {
+  display: flex;
+  margin: 0;
+  line-height: 0.5067rem;
+}
+.content .con_hd img {
+  width: 0.5067rem;
+  height: 0.5067rem;
+}
+.content .con_hd a {
+  width: 1.1733rem;
+  height: 0.2933rem;
+  font-size: 0.2933rem;
+  color: #999999;
+}
+.content .getJob_focus .swiper-container {
+  overflow: hidden;
+  width: 7.2rem;
+  margin: 0 auto;
+  height: 100%;
+}
+.content .getJob_focus .swiper-slide {
+  overflow: hidden;
+  text-align: center;
+  font-size: 0.3333rem;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  transition: 300ms;
+  transform: scale(0.8);
+  opacity: 0.2;
+}
+.content .getJob_focus .swiper-slide a {
+  width: 4.5067rem;
+  height: 5.0133rem;
+}
+.content .getJob_focus .swiper-slide a img {
+  width: 100%;
+  height: 100%;
+}
+.content .getJob_focus .swiper-slide p {
+  width: 4.5067rem;
+  font-size: 0.3333rem;
+  margin-top: 0.32rem;
+  color: #333;
+}
+.content .getJob_focus .swiper-slide-active,
+.content .getJob_focus .swiper-slide-duplicate-active {
+  opacity: 1;
+  transform: scale(1);
+  z-index: 999;
+}
+.content .study_focus {
+  margin-top: 0.6533rem;
+}
+.content .study_focus .swiper {
+  width: 100%;
+  height: 100%;
+  padding: 0.1333rem 0;
+}
+.content .study_focus .swiper-slide {
+  font-size: 0.3067rem;
+  color: #999;
+  background: #fff;
+  padding: 0.1067rem 0.1067rem 0.4rem 0.1067rem;
+  box-shadow: 0.0133rem 0.0133rem 0.0267rem 0.0133rem rgba(0, 0, 0, 0.2);
+  border-radius: 0.1067rem;
+}
+.content .study_focus .swiper-slide a {
+  width: 3.6267rem;
+  height: 2.28rem;
+}
+.content .study_focus .swiper-slide a img {
+  width: 100%;
+  height: 100%;
+}
+.content .study_focus .swiper-slide p {
+  font-size: 0.3333rem;
+  color: #1C1C1C;
+  margin-top: 0.2667rem;
+  padding-bottom: 0.3467rem;
+}
+.content .study_focus .swiper-slide span {
+  color: #FF4400;
+}
+.content .study_focus .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+footer {
+  z-index: 9999;
+  display: flex;
+  position: fixed;
+  bottom: 0;
+  width: 10rem;
+  height: 1.5333rem;
+  background-color: #fff;
+  border-top: 0.0133rem solid #e2e2e2;
+}
+footer a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  flex: 25%;
+}
+footer a img {
+  width: 0.52rem;
+  height: 0.5467rem;
+}
+footer span {
+  font-size: 0.2933rem;
+  color: #666666;
+}

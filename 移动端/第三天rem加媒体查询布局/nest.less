@@ -1,0 +1,19 @@
+.header {
+
+    // 子元素直接写在父元素内
+    a {
+        color: red;
+
+        // 伪类选择器必须加&
+        &:hover {
+            color: pink;
+        }
+    }
+}
+
+// 结构伪类选择器也需要加&
+nav {
+    &::before {
+        content: 'x';
+    }
+}

@@ -1,0 +1,13 @@
+div {
+    float: left;
+    width: 50%;
+    height: 100px;
+}
+
+div:first-child {
+    background-color: pink;
+}
+
+div:last-child {
+    background-color: red;
+}

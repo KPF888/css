@@ -1,0 +1,9 @@
+.header a {
+  color: red;
+}
+.header a:hover {
+  color: pink;
+}
+nav::before {
+  content: 'x';
+}

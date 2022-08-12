@@ -1,0 +1,18 @@
+@border: 5px + 50;
+@htmlFontSize: 50px;
+
+div {
+    width: 200px - 50;
+    height: (200px+50) * 2;
+    border: @border solid red;
+    background-color: #666 - #444;
+}
+
+img {
+    width: 82rem / @htmlFontSize;
+    height: 82rem / @htmlFontSize;
+}
+
+// 1.计算符号两边必须加空格
+// 2.两个数运算如果只有一个数有单位那么就以这个单位为准
+// 3.两个数运算如果都有单位则以第一个单位为准

@@ -1,0 +1,118 @@
+@import url(common.less); //引入文件
+@baseFont: 50;
+
+body {
+    min-width: 320px;
+    width: 15rem;
+    margin: 0 auto;
+    // line-height: 1.5;
+    font-family: Arial, Helvetica;
+    background-color: #f2f2f2;
+    height: 3000px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+.top_search {
+    display: flex;
+    width: 15rem;
+    height: (88rem / @baseFont);
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: fixed;
+    background-color: #FFC001;
+
+    .search {
+        flex: 1;
+
+        form {
+            height: (88rem/@baseFont);
+        }
+
+        input {
+            margin-top: (11rem/@baseFont);
+            border: none;
+            outline: none;
+            width: 100%;
+            height: (66rem/@baseFont);
+            border-radius: (33rem/@baseFont);
+            font-size: (25rem/@baseFont);
+            background-color: #FFF2CC;
+            padding-left: (55rem/@baseFont);
+        }
+    }
+
+    a {
+        &:first-child {
+            width: (44rem / @baseFont);
+            height: (70rem / @baseFont);
+            margin-top: (11rem / @baseFont);
+            margin-left: (24rem / @baseFont);
+            margin-bottom: (7rem/@baseFont);
+            margin-right: (25rem/@baseFont);
+            background: url(../images/classify.png) no-repeat;
+            background-size: (44rem / @baseFont) (70rem / @baseFont);
+        }
+    }
+
+    a {
+        &:last-child {
+            width: (75rem / @baseFont);
+            height: (70rem / @baseFont);
+            margin: (10rem / @baseFont);
+            text-align: center;
+            line-height: (70rem / @baseFont);
+            font-size: (25rem/@baseFont);
+            color: #f2f2f2;
+        }
+    }
+}
+
+// banner部分
+.banner {
+    width: (750rem/@baseFont);
+    height: (368rem/@baseFont);
+
+    img {
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+}
+
+// ad 部分
+.ad {
+    display: flex;
+
+    a {
+        flex: 1;
+
+        img {
+            width: 100%;
+        }
+    }
+}
+
+//nav
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    height: (280rem/@baseFont);
+
+    a {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex: 20%;
+        font-size: (25rem/@baseFont);
+
+        img {
+            width: (82rem/@baseFont);
+            height: (82rem/@baseFont);
+        }
+    }
+}

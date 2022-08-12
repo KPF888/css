@@ -1,0 +1,10 @@
+div {
+  width: 150px;
+  height: 500px;
+  border: 55px solid red;
+  background-color: #222222;
+}
+img {
+  width: 82rem / 50px;
+  height: 82rem / 50px;
+}
