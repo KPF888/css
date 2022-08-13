@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        div[class^='col'] {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-4 col-sm-6 con-xs-12">1</div>
+            <div class="col-lg-3 col-md-4 col-sm-6 con-xs-12">2</div>
+            <div class="col-lg-3 col-md-4 col-sm-6 con-xs-12">3</div>
+            <div class="col-lg-3 col-md-4 col-sm-6 con-xs-12">4</div>
+        </div>
+        <!-- 如果孩子份数相加等于12则沾满整个container盒子 -->
+        <div class="row">
+            <div class="col-lg-6">1</div>
+            <div class="col-lg-2">2</div>
+            <div class="col-lg-2">3</div>
+            <div class="col-lg-2">4</div>
+        </div>
+        <!-- 如果孩子份数相加小于12 那么占不满盒子 -->
+        <div class="row">
+            <div class="col-lg-6">1</div>
+            <div class="col-lg-2">2</div>
+            <div class="col-lg-2">3</div>
+            <div class="col-lg-1">4</div>
+        </div>
+        <!-- 如果孩子份数大于12 多余的一列会另起一行显示 -->
+        <div class="row">
+            <div class="col-lg-6">1</div>
+            <div class="col-lg-2">2</div>
+            <div class="col-lg-2">3</div>
+            <div class="col-lg-3">4</div>
+        </div>
+    </div>
+</body>
+
+</html>

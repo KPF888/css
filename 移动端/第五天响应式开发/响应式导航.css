@@ -1,0 +1,73 @@
+body {
+  background-color: #fff;
+}
+
+ul {
+  padding: 0;
+}
+
+.container {
+  height: 150px;
+  margin: 0 auto;
+  background-color: #ccc;
+}
+
+/* 超小屏幕下 小于768px 宽度设置为百分百 */
+@media screen and (max-width: 767px) {
+  .container ul li {
+    float: left;
+    width: 33.33%;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
+
+/* 小屏幕下 大于等于768px 宽度设置为750px */
+@media screen and (min-width: 768px) {
+  .container ul li {
+    float: left;
+    width: 33.33%;
+  }
+
+  .container {
+    width: 750px;
+  }
+}
+
+/* 中等屏幕 大于等于992px 宽度设置为970px */
+@media screen and (min-width: 992px) {
+  .container ul {
+    display: flex;
+  }
+
+  .container ul li {
+    flex: 1;
+  }
+
+  .container {
+    width: 970px;
+  }
+}
+
+/* 大屏幕下 大于等于1200px 宽度设置为1170px */
+@media screen and (min-width: 1200px) {
+  .container ul {
+    display: flex;
+  }
+
+  .container ul li {
+    flex: 1;
+  }
+
+  .container {
+    width: 1170px;
+  }
+}
+
+ul li {
+  list-style: none;
+  font-size: 22px;
+  background-color: pink;
+}

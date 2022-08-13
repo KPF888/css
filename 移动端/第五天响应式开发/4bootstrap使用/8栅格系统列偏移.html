@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <style>
+        .row div {
+            height: 50px;
+            background-color: #d90000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">左侧</div>
+            <!-- 偏移的份数用 12减去两个盒子所占的份数 -->
+            <div class="col-md-4 col-md-offset-4">右侧</div>
+        </div>
+        <div class="row">
+            <!-- 偏移剩余份数的一半 -->
+            <div class="col-md-8 col-md-offset-2">中间盒子</div>
+        </div>
+    </div>
+</body>
+
+</html>

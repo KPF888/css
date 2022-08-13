@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.vMiddle {
+  vertical-align: middle;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hd {
+  display: flex;
+  width: 100%;
+  height: 13.3333vw;
+  padding: 0 3.2vw 0 4.8vw;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hd .icon-bilibili::before {
+  font-size: 7.46667vw;
+  color: #fb7299;
+}
+
+.right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right .login img {
+  width: 6.4vw;
+  height: 6.4vw;
+  margin: 0 5.8667vw;
+}
+
+.right .down img {
+  width: 19.2vw;
+  height: 6.4vw;
+}
+
+.right .icon-search::before {
+  color: #ccc;
+}
